@@ -1,0 +1,123 @@
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "ul ul"
+        "article article"
+        "figure main"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    background-color: #03a3df;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.hours {
+    font-size: 15px;
+}
+
+ul.menu {
+    grid-area: ul;
+    background-color: #03a3df;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+}
+
+ul.menu li {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.menu li a {
+    color: white;
+    text-decoration: none;
+    padding-right: 2rem;
+}
+
+ul.menu li a:hover {
+    color: black;
+}
+
+article {
+    grid-area: article;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #1b447f;
+}
+
+figure {
+    grid-area: figure;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 500px;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/footerImage.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    text-align: center;
+
+}
+
+.contact-info {
+    padding-top: 2rem;
+}
+
+.policy {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+@media (max-width: 850px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        min-height: 100vh;
+        display: grid;
+        grid-template-areas:
+        "header"
+        "ul"
+        "article"
+        "figure" 
+        "main"
+        "footer";
+    }
+    main {
+        grid-area: main;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        width: 500px;
+        margin-bottom: 2rem;
+        justify-self: center;
+    }
+}

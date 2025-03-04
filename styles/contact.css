@@ -1,0 +1,113 @@
+
+
+.contact-container {
+    max-width: 40%;
+    margin: 4rem auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea {
+    width: 96%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #03a3df;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #2ec0f5;
+}
+
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.social-media-links {
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #03a3df;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.hours {
+    font-size: 15px;
+}
+
+ul.menu {
+    background-color: #03a3df;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+}
+
+ul.menu li {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.menu li a {
+    color: white;
+    text-decoration: none;
+    padding-right: 2rem;
+}
+
+ul.menu li a:hover {
+    color: black;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/footerImage.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    text-align: center;
+
+}
+
+.contact-info {
+    padding-top: 2rem;
+}
+
+.policy {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}

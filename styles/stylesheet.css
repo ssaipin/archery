@@ -1,0 +1,206 @@
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    background-color: #03a3df;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+.hours {
+    font-size: 15px;
+}
+ul.menu {
+    grid-area: ul;
+    background-color: #03a3df;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+ul.menu li {
+    display: inline;
+    font-size: 18px;
+}
+ul.menu li a {
+    color: white;
+    text-decoration: none;
+    padding-right: 2rem;
+}
+ul.menu li a:hover {
+    color: black;
+}
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/footerImage.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    text-align: center;
+    margin-top: 4rem;
+}
+.contact-info {
+    padding-top: 2rem;
+}
+.policy {
+    text-align: left;
+    padding-left: 1rem;
+}
+.info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "ul ul ul"
+        "article article2 article3"
+        "video video video"
+        "section section section"
+        "main main2 main3"
+        "section2 section2 section2"
+        "main4 main5 main6"
+        "footer footer footer";
+    gap: 10px; 5px;
+}
+.article {
+    grid-area: article;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #1b447f;
+}
+.article2 {
+    grid-area: article2;
+    text-align: center;
+}
+
+.article3 {
+    grid-area: article3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #1b447f;
+    text-align: center;
+}
+.video {
+    grid-area: video;
+    margin-top: 2rem;
+    text-align: center;  
+}
+.section {
+    grid-area: section;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    color: #1b447f;
+}
+h2 {
+    color: #ecb722;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+    grid-area: main;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 350px;
+    padding: 10px;
+    justify-self: center;
+}
+.main2 {
+    grid-area: main2;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 350px;
+    padding: 10px;
+    justify-self: center;
+}
+.main3 {
+    grid-area: main3;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 350px;
+    padding: 10px;
+    justify-self: center;
+}
+.section2 {
+    grid-area: section2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    color: #1b447f;
+}
+.main4 {
+    grid-area: main4;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 320px;
+    padding: 10px;
+    justify-self: center;
+}
+.main5 {
+    grid-area: main5;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 320px;
+    padding: 10px;
+    justify-self: center;
+}
+.main6 {
+    grid-area: main6;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 320px;
+    padding: 10px;
+    justify-self: center;
+}
+.button {
+    background-color: #444444;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #ecb722;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ecb722;
+    color: #444444;
+}
+@media (max-width: 850px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        min-height: 100vh;
+        display: grid;
+        grid-template-areas:
+        "header"
+        "ul"
+        "article"
+        "article2"
+        "article3"
+        "video"
+        "section"
+        "main"
+        "main2"
+        "main3"
+        "section2"
+        "main4"
+        "main5"
+        "main6"
+        "footer";
+}
+}
