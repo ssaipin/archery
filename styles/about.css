@@ -80,7 +80,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 50vh;
+    height: auto;
     text-align: center;
 
 }
@@ -99,7 +99,7 @@ main {
     font-size: 14px;
     font-weight: lighter;
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
     .grid-container {
         grid-template-columns: 1fr;
         min-height: 100vh;

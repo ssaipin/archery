@@ -42,7 +42,7 @@ ul.menu li a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 50vh;
+    height: auto;
     text-align: center;
     margin-top: 4rem;
 }
@@ -181,7 +181,7 @@ h2 {
     background-color: #ecb722;
     color: #444444;
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
     .grid-container {
         grid-template-columns: 1fr;
         min-height: 100vh;
