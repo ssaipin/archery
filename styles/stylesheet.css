@@ -72,7 +72,7 @@ ul.menu li a:hover {
         "section2 section2 section2"
         "main4 main5 main6"
         "footer footer footer";
-    gap: 10px; 5px;
+    gap: 10px 5px;
 }
 .article {
     grid-area: article;
