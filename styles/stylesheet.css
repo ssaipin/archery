@@ -213,15 +213,15 @@ h2 {
     width: auto;
 }
 .main4 {
-    width: auto;
+    width: -webkit-fill-available;
 }
 .main5 {
-    width: auto;
+    width: -webkit-fill-available;
 }
 .main6 {
-    width: auto;
+    width: -webkit-fill-available;
 }
 .button {
-    font-size: 17px;
+    font-size: 1.5rem;
 }
 }
